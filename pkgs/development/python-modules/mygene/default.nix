@@ -24,7 +24,7 @@ buildPythonPackage rec {
     biothings-client
     requests
   ];
-  pythonImportsCheck = [ "mygene" ] ++ (if with-pandas then [ "pandas" ] else [ ]);
+  pythonImportsCheck = [ "mygene" ];
 
   meta = {
     changelog = "https://github.com/biothings/mygene.py/blob/v${version}/CHANGES.txt";
