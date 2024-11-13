@@ -23,7 +23,7 @@ buildPythonPackage rec {
   dependencies = [
     biothings-client
     requests
-  ] ++ (if with-pandas then [ pandas ] else [ ]);
+  ];
   pythonImportsCheck = [ "mygene" ] ++ (if with-pandas then [ "pandas" ] else [ ]);
 
   meta = {
