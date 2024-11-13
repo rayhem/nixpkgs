@@ -5,7 +5,6 @@
   setuptools,
   biothings-client,
   requests,
-  with-pandas ? false,
   pandas,
 }:
 buildPythonPackage rec {
